@@ -1,19 +1,51 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer>
-      <p>&copy; 2025 Weather Website</p>
-      <nal>
-        <li>
-          <a href="/">About</a>
-        </li>
-        <li>
-          <a href="/">Contact</a>
-        </li>
-      </nal>
+    <footer className="App-footer">
+      <div className="footer-content">
+        <p className="i4">React Weather App</p>
+        <nav className="links">
+          <ul>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/user/bangwoo4/"
+                aria-label="GeeeksforGeeks"
+              >
+                GeeeksforGeeks
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/bangwoo4_/"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} /> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100018136776949"
+                aria-label="Facebook"
+              >
+                <FontAwesomeIcon icon={faFacebook} /> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Bangwoo4" aria-label="Github">
+                <FontAwesomeIcon icon={faGithub} /> Github
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   );
-};
-
+}
 export default Footer;
