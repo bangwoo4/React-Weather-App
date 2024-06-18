@@ -1,3 +1,7 @@
+React Weather app using https://openweathermap.org API.
+
+I don't own all the code in this repo.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
