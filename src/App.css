@@ -19,11 +19,11 @@ button {
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #59797a;
   justify-content: space-between;
   color: white;
   flex-direction: row;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
 }
@@ -56,7 +56,7 @@ height: 40px;
   transition: color 0.3s ease-in-out;
 }
 .App-header nav a:hover {
-  color: #61dafb;
+  color: #17c7f7;
 }
 /* About Button */
 .about-button {
@@ -69,14 +69,14 @@ height: 40px;
 }
 
 .about-button:hover {
-  color: #61dafb;
+  color: #17c7f7;
   transform: scale(1.1);
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* About Info Section */
 .about-info {
-  background-color: #282c34;
+  background-color: #3d444bc0;
   border: 1px solid #61dafb;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -109,17 +109,17 @@ height: 40px;
   transition: background-color 0.3s ease-in-out;
 }
 .about-info button:hover {
-  background-color: #48a3d1;
+  background-color:   #17c7f7;
 }
 
 .App-footer {
-  background-color: #282c34;
+ background-color: #59797a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-    padding: 1rem;
+    padding: 35px;
 }
 .footer-content {
   display: flex;
@@ -136,7 +136,8 @@ height: 40px;
 }
 .footer-content .i4{
     margin: 10px;
-    
+   text-align: center;
+
 }
 .footer-content nav li {
   margin: 0 10px;
@@ -147,5 +148,5 @@ height: 40px;
   transition: color 0.3s ease-in-out;
 }
 .footer-content nav li a:hover {
-  color: #61dafb;
+    color: #17c7f7;
 }

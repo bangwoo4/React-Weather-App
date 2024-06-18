@@ -10,7 +10,12 @@ function Footer() {
   return (
     <footer className="App-footer">
       <div className="footer-content">
-        <p className="i4">React Weather App</p>
+        <p className="i4">
+          React Weather App
+          <br></br>
+          Copyright © 2024 - Created by Bang
+        </p>
+
         <nav className="links">
           <ul>
             <li>
