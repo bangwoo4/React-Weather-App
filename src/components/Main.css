@@ -1,11 +1,12 @@
 /* Main.css */
 
-.Main .App {
+.MainApp {
   padding: 20px;
 }
 
+
 .bt {
-  background-color: #007bff;
+  background-color: #59797ad8;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -21,7 +22,7 @@
 }
 
 .bt:hover {
-  background-color: #0056b3;
+  background-color: #59797a;
   transform: translateY(-3px);
 }
 
@@ -70,7 +71,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 15px 20px;
-  background-color: #f5f5f5;
+  background-color: #59797a33;
 }
 
 .city-name h2 {
@@ -83,8 +84,9 @@
   color: #666;
 }
 
+/*btfav*/
 .city-name button {
-  background-color: #4CAF50;
+  background-color: #59797abc;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -99,7 +101,7 @@
 }
 
 .city-name button:hover {
-  background-color: #3e8e41;
+  background-color: #59797a;
   transform: translateY(-2px);
 }
 
@@ -110,7 +112,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px 15px;
-  background-color: #f5f5f5;
+  background-color: #59797a33;
 }
 
 .icon-temp {
@@ -122,7 +124,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 15px 20px;
-  background-color: #f5f5f5;
+  background-color: #59797a33;
 }
 
 .icon-temp img {
@@ -142,7 +144,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px 15px;
-  background-color: #f5f5f5;
+  background-color: #59797a33;
 }
 
 .forecast {
@@ -154,15 +156,17 @@
 
 .forecast > div {
   text-align: center;
-  background-color: #fff;
+  background-color: #59797a33;
   padding: 35px 25px;
   border-radius: 35px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
+
 .forecast > div:hover {
   transform: scale(1.05);
+  
 }
 
 .forecast img {
@@ -189,22 +193,6 @@
   border-radius: 8px;
   margin-bottom: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.App.dark-mode {
-  background-color: #333;
-  color: #f5f5f5;
-}
-
-.App.dark-mode .city-search,
-.App.dark-mode .city-name,
-.App.dark-mode .date,
-.App.dark-mode .icon-temp,
-.App.dark-mode .des-wind,
-.App.dark-mode .forecast > div {
-  background-color: #444;
-  color: #f5f5f5;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .share-weather {

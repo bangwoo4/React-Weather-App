@@ -19,10 +19,14 @@ function Main() {
 
   const [forecast, setForecast] = useState(null);
 
+  /*
+#f5f5f5 = red
+#333 = blue
+*/
+
   const [theme, setTheme] = useState(
     JSON.parse(localStorage.getItem("theme")) || {
       backgroundColor: "#f5f5f5",
-      color: "#333",
     }
   );
 
@@ -111,7 +115,7 @@ function Main() {
   const toggleTheme = () => {
     const newTheme = {
       backgroundColor: theme.backgroundColor === "#f5f5f5" ? "#333" : "#f5f5f5",
-      color: theme.color === "#333" ? "#f5f5f5" : "#333",
+      color: theme.backgroundColor === "#f5f5f5" ? "#f5f5f5" : "#333",
     };
     setTheme(newTheme);
     localStorage.setItem("theme", JSON.stringify(newTheme));
@@ -138,7 +142,7 @@ function Main() {
   };
 
   return (
-    <div className="App" style={theme}>
+    <div className="MainApp" style={theme}>
       <div className="search-bar">
         <input
           type="text"
@@ -182,9 +186,11 @@ function Main() {
                 : "Add to Favorites"}
             </button>
           </div>
+
           <div className="date">
             <span>{toDateFunction()}</span>
           </div>
+
           <div className="icon-temp">
             <img
               className=""

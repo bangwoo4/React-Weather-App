@@ -30,15 +30,12 @@ const Header = () => {
           alt="Logo"
           className="logo logo-white"
         />
-        <h2 className="WeatherApp">Weather App</h2>
+        <h2 className="WeatherApp">React Weather App</h2>
       </div>
       <nav className="Buttonss">
         <ul>
           <li>
             <a href="http://localhost:3000">Home</a>
-          </li>
-          <li>
-            <a href="/">Settings</a>
           </li>
           <li>
             <button className="about-button" onClick={toggleContactInfo}>
