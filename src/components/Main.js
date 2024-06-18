@@ -147,7 +147,7 @@ function Main() {
         <input
           type="text"
           className="city-search"
-          placeholder="Enter City Name.."
+          placeholder="Search for a city..."
           name="query"
           value={input}
           onChange={(event) => setInput(event.target.value)}
@@ -177,6 +177,7 @@ function Main() {
             <h2>
               {weather.data.name}, <span>{weather.data.sys.country}</span>
             </h2>
+
             <button
               className="btfav"
               onClick={() => toggleFavorite(weather.data.name)}

@@ -42,25 +42,33 @@
   transform: scale(1.05);
 }
 
+@keyframes glowing {
+  0% { box-shadow: 0 0 3px #888, 0 0 10px #888, 0 0 20px #888, 0 0 30px #888; }
+  50% { box-shadow: 0 0 5px #888, 0 0 15px #888, 0 0 25px #888, 0 0 35px #888; }
+  100% { box-shadow: 0 0 3px #888, 0 0 10px #888, 0 0 20px #888, 0 0 30px #888; }
+}
+
 .city-search {
   width: 400px;
   padding: 14px 20px;
   font-size: 18px;
   border: none;
   border-radius: 25px;
-  background-color: #f5f5f5;
   color: #333;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(128, 128, 143, 0.386);
+  animation: glowing 2s infinite;
 }
 
 .city-search:focus {
   outline: none;
-  box-shadow: 0 0 10px rgba(102, 175, 233, 0.6);
+  box-shadow: 0 0 10px rgba(60, 98, 130, 0.6);
 }
 
 .city-search::placeholder {
-  color: #888;
+  color: rgba(17, 16, 16, 0.325);
+  font-style: italic;
 }
 
 .city-name {

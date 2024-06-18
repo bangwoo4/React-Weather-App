@@ -43,11 +43,14 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/Bangwoo4" aria-label="Github">
+              <a href="https://github.com/bangwoo4" aria-label="Github">
                 <FontAwesomeIcon icon={faGithub} /> Github
               </a>
             </li>
           </ul>
+          <div style={{ padding: "10px" }}>
+            All the weather data is provided by OpenWeatherMap API.
+          </div>
         </nav>
       </div>
     </footer>
